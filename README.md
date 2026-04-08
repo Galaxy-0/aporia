@@ -1,2 +1,1 @@
-# aporia
-A TUI-based semantic state machine. Navigate the 4D ideological matrix, locate the logical deadlocks, and crash the system.
+aporia /əˈpɔːriə/ > n. A logical impasse or paradox.Aporia is not a game to be won, but a legacy system to be destructed. Powered by TypeScript and LLM streaming, it projects a $4 \times 4 \times 4 \times 4$ ideological matrix into a dynamic TUI topology. Your ultimate directive: survive the semantic rendering, uncover the invariant paradox, and execute a dialectical override.
