@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "cat world/state.json 2>/dev/null || echo '{\"initialized\": false}'"
+      }
+    ]
+  }
+}

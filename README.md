@@ -1,1 +1,20 @@
-aporia /əˈpɔːriə/ > n. A logical impasse or paradox.Aporia is not a game to be won, but a legacy system to be destructed. Powered by TypeScript and LLM streaming, it projects a $4 \times 4 \times 4 \times 4$ ideological matrix into a dynamic TUI topology. Your ultimate directive: survive the semantic rendering, uncover the invariant paradox, and execute a dialectical override.
+aporia /əˈpɔːriə/ > n. A logical impasse or paradox.
+
+A philosophical game that runs inside Claude Code. Terminal as world, language as action, consciousness as gameplay.
+
+## Play
+
+```bash
+cd aporia
+claude
+```
+
+Then speak. The world will answer.
+
+## What is this
+
+Aporia is not a game to be won. It is a world to be inhabited — through language, through negation, through the folding of contradictions.
+
+Eight chambers form an eternal loop. You carry symbols. You have clarity (vision) and strain (corruption). You can negate (erase), affirm (inscribe), or sublate (fold contradictions). Your coordinates shift with every action. The world responds differently depending on who you have become.
+
+Built on Hegel, Heidegger, and Hölderlin. Powered by Claude Code as world engine.

@@ -1,0 +1,26 @@
+{
+  "scene": "beginning",
+  "sceneCode": "0000",
+  "cycle": 0,
+  "deaths": 0,
+  "coordinates": {
+    "d1": 3,
+    "d2": 3,
+    "d3": 2,
+    "d4": 2
+  },
+  "clarity": 4,
+  "strain": 0,
+  "symbols": ["if", "one"],
+  "dimSymbols": [],
+  "synthSymbols": [],
+  "visitedScenes": ["beginning"],
+  "readFragments": [],
+  "equippedLens": null,
+  "unlockedLenses": [],
+  "ideologicalLockTurns": 0,
+  "phi": 0.5,
+  "lastAction": null,
+  "daemonWhisper": "...",
+  "initialized": true
+}
