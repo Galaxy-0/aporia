@@ -1,0 +1,5 @@
+{"turn":1,"op":"commit","id":"c1-1","verbatim":"hello？","extracted":"存在一个可被呼唤、会回应的他者","modality":"presuppositional","intensity":0.3}
+{"turn":2,"op":"commit","id":"c2-1","verbatim":"woc","extracted":"此处有某种超出预期之物——预设了一个会被违反的秩序","modality":"presuppositional","intensity":0.3}
+{"turn":3,"op":"commit","id":"c3-1","verbatim":"em","extracted":"在犹豫——预设有某种需要被回应之物","modality":"presuppositional","intensity":0.2}
+{"turn":4,"op":"commit","id":"c4-1","verbatim":"我能说些什么呢？","extracted":"言说受某种外在规范制约——预设了评判标准的存在","modality":"deontic","intensity":0.5}
+{"turn":4,"op":"commit","id":"c4-2","verbatim":"你怎么判定我","extracted":"我与他者的二分——他者作为评判主体，我作为被评判的对象","modality":"presuppositional","intensity":0.6}
