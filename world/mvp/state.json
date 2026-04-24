@@ -1,0 +1,19 @@
+{
+  "turn": 0,
+  "reincarnation": 0,
+  "phase": "immersion",
+  "chapter": "beginning",
+  "current_cell": null,
+  "current_cell_label": null,
+  "author_unmasked": false,
+  "pressure": 12,
+  "situation": "你站在门厅，索引暂时看起来可靠。",
+  "last_affordances": [
+    "先说一句话，让图书馆决定它怎样误读你。"
+  ],
+  "last_anchor_diagnostics": null,
+  "current_trajectory_id": null,
+  "current_trajectory_label": null,
+  "last_trajectory_diagnostics": null,
+  "history": []
+}

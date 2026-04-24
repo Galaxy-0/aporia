@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "narration",
+    "adjudication",
+    "state_patch",
+    "anchor_diagnostics",
+    "trajectory_diagnostics",
+    "affordances",
+    "tags"
+  ],
+  "properties": {
+    "narration": {
+      "type": "string"
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "reading",
+        "world_move",
+        "misread",
+        "trap",
+        "escape",
+        "crack",
+        "unclassifiable"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string"
+        },
+        "reading": {
+          "type": "string"
+        },
+        "world_move": {
+          "type": "string"
+        },
+        "misread": {
+          "type": "boolean"
+        },
+        "trap": {
+          "type": "boolean"
+        },
+        "escape": {
+          "type": "boolean"
+        },
+        "crack": {
+          "type": "boolean"
+        },
+        "unclassifiable": {
+          "type": "boolean"
+        }
+      }
+    },
+    "state_patch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "phase",
+        "chapter",
+        "current_cell_id",
+        "current_cell_label",
+        "author_unmasked",
+        "pressure",
+        "situation"
+      ],
+      "properties": {
+        "phase": {
+          "type": "string",
+          "enum": [
+            "immersion",
+            "crack",
+            "wakefulness"
+          ]
+        },
+        "chapter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current_cell_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "current_cell_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "author_unmasked": {
+          "type": "boolean"
+        },
+        "pressure": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "situation": {
+          "type": "string"
+        }
+      }
+    },
+    "anchor_diagnostics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_anchor",
+        "secondary_anchors",
+        "turn_tags",
+        "history_carryover_tags",
+        "supporting_signals",
+        "context_note",
+        "competing_note",
+        "player_model"
+      ],
+      "properties": {
+        "primary_anchor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "label",
+            "confidence"
+          ],
+          "properties": {
+            "id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "label": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        "secondary_anchors": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "confidence"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          }
+        },
+        "turn_tags": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 5,
+          "items": {
+            "type": "string"
+          }
+        },
+        "history_carryover_tags": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_signals": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "string"
+          }
+        },
+        "context_note": {
+          "type": "string"
+        },
+        "competing_note": {
+          "type": "string"
+        },
+        "player_model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "current_posture",
+            "historical_posture",
+            "tension",
+            "confidence"
+          ],
+          "properties": {
+            "current_posture": {
+              "type": "string"
+            },
+            "historical_posture": {
+              "type": "string"
+            },
+            "tension": {
+              "type": "string"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        }
+      }
+    },
+    "trajectory_diagnostics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "route_id",
+        "route_label",
+        "route_summary",
+        "why_this_route",
+        "historical_pull",
+        "anti_collapse_note",
+        "next_step_bias",
+        "competing_routes",
+        "confidence"
+      ],
+      "properties": {
+        "route_id": {
+          "type": "string"
+        },
+        "route_label": {
+          "type": "string"
+        },
+        "route_summary": {
+          "type": "string"
+        },
+        "why_this_route": {
+          "type": "string"
+        },
+        "historical_pull": {
+          "type": "string"
+        },
+        "anti_collapse_note": {
+          "type": "string"
+        },
+        "next_step_bias": {
+          "type": "string"
+        },
+        "competing_routes": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "confidence"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            }
+          }
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "affordances": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

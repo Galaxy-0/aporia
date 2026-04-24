@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "player_id": "local",
+  "total_turns": 0,
+  "total_reincarnations": 0,
+  "portrait_confidence": 0.0,
+  "generated_from_turns": [],
+  "provisional": true,
+  "current_portrait": {
+    "posture": "",
+    "signature_words": [],
+    "dialectical_tensions": [],
+    "last_updated_turn": 0
+  },
+  "trajectory_summary": []
+}
